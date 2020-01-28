@@ -1,0 +1,7 @@
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+    sass_dir: _sass
