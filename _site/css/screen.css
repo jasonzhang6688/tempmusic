@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  margin-top: 50px;
   font-family: Verdana, Arial, Helvetica, sans-serif; }
 
 body a {
@@ -10,7 +11,10 @@ body li {
 
 .topnav {
   overflow: hidden;
+  position: fixed;
+  top: 0px;
   background-color: #333;
+  width: 100%;
   min-width: 600px; }
 
 .topnav a {
@@ -34,11 +38,10 @@ body li {
   float: right; }
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ddd;
+  background-color: #dddddd;
   height: 40px;
   font-size: 9px;
   text-align: right; }
