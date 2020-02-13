@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/screen.css">
+</head>
+    <body>
+        <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="1.html">Tab 1</a>
+    <a href="2.html">Tab 2</a>
+    <a href="3.html">Tab 3</a>
+    <a href="4.html">Tab 4</a>
+    <a href="index.html" style="float: right;">Temp Music</a>
+    <a href="login.html" style="float: right"> login</a>
+</div>
+        
+        <div class="default-layout">
+              <body>
+    <h2>Login here!</h2><br />
+    <form id="login-form">
+      <div class="input-field">
+        <input type="email" id="login-email" required />
+        <label for="login-email">Email address</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="login-password" required />
+        <label for="login-password">Your password</label>
+      </div>
+      <button class>Login</button>
+    </form>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBI7SqlIECzO4-vbMOHlEREsKxAhCJZplo",
+      authDomain: "musicalreddit.firebaseapp.com",
+      databaseURL: "https://musicalreddit.firebaseio.com",
+      projectId: "musicalreddit",
+      // storageBucket: "musicalreddit.appspot.com",
+      messagingSenderId: "927262499011",
+      appId: "1:927262499011:web:6064ff0c3879bed6704276",
+      // measurementId: "G-2NK17MN5QF"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase firestore();
+
+    db.settings({timestampsInSnapshots: true});
+
+  </script>
+
+   <script src="scripts/login.js"></script>
+   
+</body>
+
+ 
+        </div>
+
+        <div class="footer">
+    <p>Contact us at @yaboi<p>
+</div>
+    </body>
+</html>
