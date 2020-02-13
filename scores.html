@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% for score in site.data.scores %}
+    {% include score_item.html
+      title=score.title
+      composer=score.composer
+      date=score.date
+      pdf=score.pdf
+      link=score.link %}
+{% endfor %}
