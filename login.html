@@ -4,47 +4,41 @@ layout: default
 ---
 
   <body>
-    <h2>Login here!</h2><br />
+    <h4>Login here!</h4>
     <form id="login-form">
       <div class="input-field">
-        <input type="email" id="login-email" required />
+        <input type="email" id="login-email" placeholder = "Email" required />
         <label for="login-email">Email address</label>
       </div>
       <div class="input-field">
-        <input type="password" id="login-password" required />
+        <input type="password" id="login-password" placeholder = "password" required />
         <label for="login-password">Your password</label>
       </div>
-      <button class>Login</button>
+      <button id ="btnLogin" class= "btn btn-action" >Login</button>
     </form>
+    <br>
 
 
 
-  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
-  <script>
-  // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyBI7SqlIECzO4-vbMOHlEREsKxAhCJZplo",
-      authDomain: "musicalreddit.firebaseapp.com",
-      databaseURL: "https://musicalreddit.firebaseio.com",
-      projectId: "musicalreddit",
-      // storageBucket: "musicalreddit.appspot.com",
-      messagingSenderId: "927262499011",
-      appId: "1:927262499011:web:6064ff0c3879bed6704276",
-      // measurementId: "G-2NK17MN5QF"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    // const db = firebase firestore();
+    
+    Or... 
 
-    db.settings({timestampsInSnapshots: true});
 
-  </script>
 
-   <script src="scripts/login.js"></script>
-   
+    <br>
+    <h4>Sign up here!</h4>
+    <form id="signup-form">
+      <div class="input-field">
+        <input type="email" id="signup-email" placeholder = "Email" required />
+        <label for="signup-email">Email address</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="signup-password" placeholder = "password" required />
+        <label for="signup-password">password</label>
+      </div>
+      <button id ="btnSignUp" class= "btn btn-action" >Sign up</button>
+
+  <script src="scripts/auth.js"></script>
 </body>
 
  
