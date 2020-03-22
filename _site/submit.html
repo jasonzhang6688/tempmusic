@@ -2,7 +2,7 @@
 <html>
     <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Submit</title>
     <link rel="stylesheet" href="/css/screen.css">
 </head>
     <body>
@@ -23,45 +23,24 @@
 <script src = "scripts/header.js"></script> 
         
         <div class="default-layout">
-              <body>
-    <h4>Login here!</h4>
-    <form id="login-form">
+            <body>
+    <h4>Submit here!</h4>
+    <form id="submit-form">
       <div class="input-field">
-        <input type="email" id="login-email" placeholder = "Email" required />
-        <label for="login-email">Email address</label>
+        <input type="title" id="submit-title" placeholder = "Title" required />
+        <label for="title-email">Title</label>
       </div>
       <div class="input-field">
-        <input type="password" id="login-password" placeholder = "Password" required />
-        <label for="login-password">Your password</label>
+        <input type="composer" id="submit-composer" placeholder = "Composer" required />
+        <label for="submit-composer">Composer</label>
       </div>
-      <button id ="btnLogin" class= "btn btn-action" >Login</button>
+
+      <button id ="btnSubmit" class= "btn btn-action" >submit</button>
     </form>
     <br>
 
-
-
-    
-    Or... 
-
-
-
-    <br>
-    <h4>Sign up here!</h4>
-    <form id="signup-form">
-      <div class="input-field">
-        <input type="email" id="signup-email" placeholder = "Email" required />
-        <label for="signup-email">Email address</label>
-      </div>
-      <div class="input-field">
-        <input type="password" id="signup-password" placeholder = "Password" required />
-        <label for="signup-password">Password</label>
-      </div>
-      <button id ="btnSignUp" class= "btn btn-action" >Sign up</button>
-
-  <script src="scripts/auth.js"></script>
+    <script src="scripts/submit.js"></script>
 </body>
-
- 
         </div>
 
         <div class="footer">
